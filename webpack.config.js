@@ -4,7 +4,7 @@ module.exports = {
   // your config settings ...
   entry:'./src/append.js',
   output: {
-    path: path.resolve(__dirname,'/dist'),
+    path: 'dist',
     publicPath:'/dist',
     filename: "bundle.js"
   },
@@ -19,11 +19,14 @@ module.exports = {
         loaders: ["style-loader", "css-loader", "sass-loader"]
       },
       {
+        test: /\.css$/,
+        loaders: ["style-loader", "css-loader"]
+      },
+      {
         include: /\.pug/,
         // pass options to pug as a query ('pug-html-loader?pretty')
         loader: 'pug-html-loader',
       }
-     
     ]
   }
 };
