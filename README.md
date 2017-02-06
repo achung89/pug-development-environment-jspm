@@ -1,2 +1,3 @@
-# Pug-dev-environment-workstation
-Live reload dev environment using webpack, pug, and scss. 
+
+# pug-development-environment-jspm
+Pug development environment using jspm and scss
